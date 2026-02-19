@@ -8,6 +8,12 @@ fof-ignore-users:
   admin:
     permissions:
       can_not_be_ignored_label: Can not be ignored
+    settings:
+      ignored_discussion_default_behavior_label: "Default Behavior for Discussions"
+      ignored_post_default_behavior_label: "Default Behavior for Posts"
+      default_behavior_options:
+        label: "Label"
+        hide: "Hide"
 
 
   # Translations in this namespace are used by the forum interface.
@@ -23,9 +29,19 @@ fof-ignore-users:
       ignore_confirmation: Are you sure you want to ignore this user?
       unignore_button: Unignore
       unignore_confirmation: Are you sure you want to unignore this user?
+    
+    preview:
+      ignored_post_preview: "Post from ignored user"
 
     badge:
       user_label: Ignored user
       discussion_label: Started by an ignored user
 
-
+    settings:
+      ignored_discussion_default_behavior_label: "Discussions"
+      ignored_discussion_behavior_help: "How to handle discussions from ignored users."
+      ignored_post_default_behavior_label: "Posts"
+      ignored_post_behavior_help: "How to handle posts from ignored users."
+      default_behavior_options:
+        label: "Label"
+        hide: "Hide"

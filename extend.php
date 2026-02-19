@@ -74,4 +74,17 @@ return [
 
     (new Extend\ApiController(ShowForumController::class))
         ->addInclude('actor.ignoredUsers'),
+
+    (new Extend\Settings())
+        ->serializeToForum('fof-ignore-users.ignored_discussion_default_behavior', 'fof-ignore-users.ignored_discussion_default_behavior')
+        ->serializeToForum('fof-ignore-users.ignored_post_default_behavior', 'fof-ignore-users.ignored_post_default_behavior'),
+
+        (new Extend\User())
+        ->registerPreference('fof-ignore-users.ignored_discussion_behavior', function ($value) {
+            return $value;
+        },  resolve('flarum.settings')->get('fof-ignore-users.ignored_discussion_default_behavior', 'hide'))
+        ->registerPreference('fof-ignore-users.ignored_post_behavior', function ($value) {
+            return $value;
+        }, resolve('flarum.settings')->get('fof-ignore-users.ignored_post_default_behavior', 'hide')),
+
 ];
