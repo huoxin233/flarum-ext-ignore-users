@@ -9,11 +9,11 @@ fof-ignore-users:
     permissions:
       can_not_be_ignored_label: Can not be ignored
     settings:
-      ignored_discussion_default_behavior_label: "Default Behavior for Discussions"
-      ignored_post_default_behavior_label: "Default Behavior for Posts"
+      ignored_discussion_default_behavior_label: Default Behavior for Discussions
+      ignored_post_default_behavior_label: Default Behavior for Posts
       default_behavior_options:
-        label: "Label"
-        hide: "Hide"
+        label: Label
+        hide: Hide
 
 
   # Translations in this namespace are used by the forum interface.
@@ -38,10 +38,11 @@ fof-ignore-users:
       discussion_label: Started by an ignored user
 
     settings:
-      ignored_discussion_default_behavior_label: "Discussions"
-      ignored_discussion_behavior_help: "How to handle discussions from ignored users."
-      ignored_post_default_behavior_label: "Posts"
-      ignored_post_behavior_help: "How to handle posts from ignored users."
+      settings_heading: "Ignore User Behavior"
+      ignored_discussion_default_behavior_label: Discussions
+      ignored_discussion_default_behavior_help: How to handle discussions from ignored users
+      ignored_post_default_behavior_label: Posts
+      ignored_post_default_behavior_help: How to handle posts from ignored users
       default_behavior_options:
         label: "Label"
         hide: "Hide"

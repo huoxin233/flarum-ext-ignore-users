@@ -1,0 +1,34 @@
+fof-ignore-users:
+  admin:
+    permissions:
+      can_not_be_ignored_label: 不可屏蔽
+    settings:
+      ignored_discussion_default_behavior_label: 已屏蔽用户的主题处理方式（默认）
+      ignored_post_default_behavior_label: 已屏蔽用户的帖子处理方式（默认）
+      default_behavior_options:
+        label: 标记
+        hide: 折叠
+
+  forum:
+    profile_link: 已屏蔽用户
+    profile_page:
+      no_ignored: 这里空空如也
+    user_controls:
+      ignore_button: 屏蔽
+      ignore_confirmation: 确定要屏蔽此人？
+      unignore_button: 取消屏蔽
+      unignore_confirmation: 确定要取消屏蔽此人？
+
+    badge:
+      user_label: 已屏蔽
+      discussion_label: 由被屏蔽用户发布
+
+    settings:
+      settings_heading: 已屏蔽用户处理方式
+      ignored_discussion_default_behavior_label: 主题
+      ignored_discussion_default_behavior_help: 如何处理被屏蔽用户发起的主题
+      ignored_post_default_behavior_label: 帖子
+      ignored_post_default_behavior_help: 如何处理被屏蔽用户发表的帖子
+      default_behavior_options:
+        label: 标记
+        hide: 折叠
